@@ -35,3 +35,18 @@ describe('sayHello', function () {
         expect(sayHello("World")).toBe("Hello, World!");
     });
 });
+
+describe('isFive', function () {
+    it('should exist', function () {
+        expect(typeof isFive).toBe("function");
+    });
+    it('should only return a boolean no matter the input when executed', function () {
+        expect(typeof isFive()).toBe("boolean");
+    });
+    it('should return true when 5 is passed', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should allow the string "5" to be true when passed', function () {
+        expect(isFive("5")).toBe(true);
+    });
+})
