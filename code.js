@@ -23,6 +23,15 @@ function isVowel(input) {
     if (typeof input === "number" || typeof input === "boolean") {
         return false
     } else {
-        return !(input === "y")
+        switch (input) {
+            case "a" || "e" || "i" || "o" || "u":
+                return true;
+                break;
+            case "A" || "E" || "I" || "O" || "U":
+                return true;
+                break;
+            default:
+                return false
+        }
     }
 }
