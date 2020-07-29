@@ -14,6 +14,7 @@ describe('helloWorld', function() {
     });
 });
 
+// Unit tests for the sayHello function
 describe('sayHello', function () {
     it("should be a defined function", function(){
         expect(typeof sayHello).toBe("function");
@@ -36,6 +37,7 @@ describe('sayHello', function () {
     });
 });
 
+// Unit tests for the isFive function
 describe('isFive', function () {
     it('should exist', function () {
         expect(typeof isFive).toBe("function");
@@ -51,6 +53,7 @@ describe('isFive', function () {
     });
 })
 
+// Unit tests for the isEven function
 describe("isEven", function () {
     it('should exist', function () {
         expect(typeof isEven). toBe("function");
@@ -78,5 +81,15 @@ describe("isEven", function () {
     });
     it('should return false when "" is passed', function () {
         expect(isEven("")).toBe(false);
+    });
+})
+
+// Unit tests for the isVowel function
+describe("isVowel", function () {
+    it('should exist', function () {
+       expect(typeof isVowel).toBe("function");
+    });
+    it('should only return a boolean no matter the input when executed', function () {
+        expect(typeof isVowel()).toBe("boolean");
     });
 })
