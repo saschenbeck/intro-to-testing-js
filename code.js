@@ -37,5 +37,14 @@ function isVowel(input) {
 }
 
 function add(x,y) {
-
+    if(typeof x === "string" || typeof y === "string"){
+        var numX = parseFloat(x), numY = parseFloat(y);
+        if ( isNaN(numX)|| isNaN(numY)){
+            return NaN;
+        }else{
+            return numX + numY;
+        }
+    }else {
+        return x + y;
+    }
 }
