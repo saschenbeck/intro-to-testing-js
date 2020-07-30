@@ -126,6 +126,6 @@ describe("add", function () {
         expect(add("-4", "10")).toBe(6);
     });
     it('should return NaN if either input parsed is NaN', function () {
-        expect(add("banana","split")).toBe(NaN);
+        expect(add("banana","split")).toBe("NaN");
     });
 })
